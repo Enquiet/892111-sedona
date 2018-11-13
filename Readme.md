@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Женя Глухов](https://up.htmlacademy.ru/htmlcss/23/user/892111).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Акулин](https://htmlacademy.ru/profile/bolshu ).
 
 ---
 
