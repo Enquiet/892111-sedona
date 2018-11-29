@@ -1,0 +1,431 @@
+body {
+    margin: 0;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 26px;
+
+    background-color: #f2f2f2;
+    background-position: top center;
+}
+
+a {
+    text-decoration: none;
+
+
+}
+
+.main-cover {
+    position: relative;
+    background-image: url("../img/sedona.jpg");
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    background-size: cover;
+    height: 900px;
+
+}
+
+.main-cover::before {
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url("../img/polygon.svg");
+    background-size: 100% 60px;
+    background-repeat: no-repeat;
+}
+
+.main-nav {
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 22px;
+
+}
+
+.main-logo {
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu a {
+    color: #000000;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #81b3d2;
+}
+
+.menu a:active {
+    color: #cccccc;
+
+}
+
+.main-cover {
+    text-align: center;
+}
+
+.cause-sedona {
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+.cause-sedona h2 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+
+
+.main-search-sedona {
+
+
+    text-align: center;
+    font-size: 21px;
+
+    background-color: #766357;
+    color: #ffffff;
+
+    padding-top: 35px;
+    padding-bottom: 32px;
+    padding-left: 140px;
+    padding-right: 139px;
+    border: none;
+
+}
+
+.mani-forn {
+    background-color: #ffffff;
+}
+
+button.main-search-sedona:hover {
+    background-color: #604e43;
+}
+
+button.main-search-sedona:active {
+    background-color: #503e33;
+    color: #857871;
+}
+
+.arrival-date-calendar {
+    margin-top: 55px;
+
+
+}
+
+.arrival-date {
+    line-height: 22px;
+    font-weight: 700;
+
+    background-color: #ffffff;
+    color: #000000;
+    margin-bottom: 25px;
+
+}
+
+.date-arrival {
+    background-color: #f2f2f2;
+    border: none;
+    border: none;
+
+
+    width: 350px;
+    height: 38px;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+.date-arrival:hover {
+    background-color: #ebebeb;
+    border: none;
+    color: #000000;
+}
+
+.date-arrival:focus {
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+    color: #000000;
+
+}
+
+.departure-date-calendar {
+    margin-top: 25px;
+}
+
+.open-calendar-button {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/calendar.svg");
+    background-color: #ffffff;
+    fill: #a9a9a9;
+
+    border: none;
+    width: 38px;
+    height: 38px;
+
+}
+
+button.open-calendar-button:hover {
+    fill: #000000;
+}
+
+button.open-calendar-button:active {
+    fill: #81b3d2;
+}
+
+
+/** нужен фикс  **/
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.how-many-adults-children {
+    position: relative;
+    width: 150px;
+    margin: 50px auto 0;
+
+
+    font-weight: 700;
+
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+.input {
+    display: block;
+    padding: 0 50px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-controll {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.number-controll::before,
+.number-controll::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 16px;
+    height: 4px;
+    top: 105%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+}
+
+.number-controll:hover::before,
+.number-controll:hover::after {
+    background-color: black;
+}
+
+.min-button {
+    left: 0;
+}
+
+.max-button {
+    right: 0;
+}
+
+.max-button::before {
+    width: 4px;
+    height: 16px;
+}
+
+/**              **/
+.sedona-to {
+    font-size: 21px;
+
+    border: none;
+}
+
+.sedona-to input {
+    background-color: #81b3d2;
+    color: #ffffff;
+    padding-top: 17px;
+    padding-bottom: 22px;
+    padding-left: 198px;
+    padding-right: 198px;
+}
+
+input.sedona-to:hover {
+    background-color: #669ec0;
+    color: #ffffff;
+}
+
+input.sedona-to:active {
+    background-color: #5496bd;
+    color: #7aadcb;
+}
+
+.social {
+    list-style: none;
+}
+
+.twitter {}
+
+svg {
+    background-color: #81b3d2;
+    fill: #ffffff;
+
+}
+
+svg:hover {
+    background-color: #669ec0;
+    fill: #ffffff
+}
+
+svg:active {
+    background-color: #5496bd;
+    fill: #88b6d1;
+
+}
+
+.main-footer {
+    background-color: #f9fbf6;
+}
+
+.footer-logo-img {
+    background-color: #ffffff;
+    fill: #000000;
+}
+
+.footer-logo-img:hover {
+    background-color: #ffffff;
+    fill: #81b3d2;
+}
+
+.footer-logo-img:active {
+    background-color: #ffffff;
+    fill: #bdbbbc;
+}
+
+/** САТАЛОГ **/
+.catalog-wrapper {
+    background-color: #fefefe;
+
+}
+
+.catalog-list-info {
+    list-style: none;
+}
+
+.catalog-list-info a {
+    color: #000000;
+}
+
+.catalog-list-info a:hover {
+    color: #a3c7de;
+}
+
+.catalog-list-info a:active {
+    color: #c1c1c1;
+}
+
+.catalog-title {
+    font-size: 14px;
+}
+
+.catalog-money {
+    font-size: 14px;
+}
+
+.info-catalog {
+    background-color: #81b3d2;
+    color: #ffffff;
+
+    text-align: center;
+    font-weight: 700;
+
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 17px;
+    padding-right: 17px
+}
+
+a.info-catalog {
+    color: #ffffff;
+}
+
+.info-catalog:hover {
+    background-color: #669ec0;
+}
+
+.info-catalog:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
+.info-catalog a:active {
+    color: #88b6d1;
+}
+
+.catalog-item-button {
+    background-color: #766357;
+    color: #ffffff;
+
+    text-align: center;
+    font-weight: 700;
+
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+a.catalog-item-button {
+    color: #ffffff;
+}
+
+.catalog-item-button:hover {
+    background-color: #604e43;
+
+}
+
+.catalog-item-button:active {
+    background-color: #503e33;
+    color: #766860;
+}
+
+.item-ratig-count {
+    background-color: #f2f2f2;
+    color: #8b8b8b;
+
+    width: 110px;
+    height: 27px;
+    text-align: center;
+}
