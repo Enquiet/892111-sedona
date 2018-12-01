@@ -11,6 +11,12 @@ body {
 
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -19,6 +25,7 @@ a {
 .main-cover {
     position: relative;
     background: lightblue url("../img/sedona.jpg") no-repeat center top;
+    background-size: cover;
 }
 
 .main-cover::before {
@@ -36,13 +43,8 @@ a {
 .main-nav {
     font-weight: 700;
     background-color: #ffffff;
-    color: #000000;
     line-height: 22px;
 
-}
-
-.main-logo {
-    text-align: center;
 }
 
 .menu {
@@ -71,7 +73,7 @@ a {
     background-color: #ffffff;
 }
 
-.cause-sedona h2 {
+.headline h2 {
     font-size: 21px;
     line-height: 26px;
 }
@@ -95,7 +97,7 @@ a {
 
 }
 
-.mani-forn {
+.main-forn {
     background-color: #ffffff;
 }
 
@@ -114,12 +116,11 @@ button.main-search-sedona:active {
 
 }
 
-.arrival-date {
+.date-of-eviction-and-age {
     line-height: 22px;
     font-weight: 700;
 
     background-color: #ffffff;
-    color: #000000;
     margin-bottom: 25px;
 
 }
@@ -127,13 +128,11 @@ button.main-search-sedona:active {
 .date-arrival {
     background-color: #f2f2f2;
     border: none;
-    border: none;
-
 
     width: 350px;
     height: 38px;
     border: none;
-    color: #000000;
+
     text-align: center;
     font-weight: bold;
 
@@ -178,13 +177,6 @@ button.open-calendar-button:active {
     fill: #81b3d2;
 }
 
-
-/** нужен фикс  **/
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
 .how-many-adults-children {
     position: relative;
     width: 150px;
@@ -204,11 +196,11 @@ button.open-calendar-button:active {
     width: 150px;
     height: 40px;
     border: none;
-    background-color: lightgray;
+    background-color: #f2f2f2;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    color: gray;
+    color: #a9a9a9;
 }
 
 .input::-webkit-outer-spin-button,
@@ -259,10 +251,8 @@ button.open-calendar-button:active {
     height: 16px;
 }
 
-/**              **/
-.sedona-to {
+.find-sedona {
     font-size: 21px;
-
     border: none;
 }
 
@@ -275,35 +265,44 @@ button.open-calendar-button:active {
     padding-right: 198px;
 }
 
-input.sedona-to:hover {
+input.find-sedona:hover {
     background-color: #669ec0;
     color: #ffffff;
 }
 
-input.sedona-to:active {
+input.find-sedona:active {
     background-color: #5496bd;
     color: #7aadcb;
 }
 
-.social {
+
+.main-social {
     list-style: none;
 }
 
-.twitter {}
-
-svg {
+.social-background {
+    width: 48px;
+    height: 46px;
     background-color: #81b3d2;
-    fill: #ffffff;
-
 }
 
-svg:hover {
+.social-background:hover {
     background-color: #669ec0;
+}
+
+.social-background:active {
+    background-color: #5496bd;
+}
+
+.social-logo {
+    fill: #ffffff;
+}
+
+.social-logo:hover {
     fill: #ffffff
 }
 
-svg:active {
-    background-color: #5496bd;
+.social-logo:active {
     fill: #88b6d1;
 
 }
@@ -313,24 +312,20 @@ svg:active {
 }
 
 .footer-logo-img {
-    background-color: #ffffff;
     fill: #000000;
 }
 
 .footer-logo-img:hover {
-    background-color: #ffffff;
     fill: #81b3d2;
 }
 
 .footer-logo-img:active {
-    background-color: #ffffff;
     fill: #bdbbbc;
 }
 
 /** КАТАЛОГ **/
 .catalog-wrapper {
     background-color: #fefefe;
-
 }
 
 .catalog-list-info {
@@ -402,7 +397,7 @@ a.catalog-item-button {
     color: #857871;
 }
 
-.item-ratig-count {
+.item-rating-count {
     background-color: #f2f2f2;
     color: #8b8b8b;
 
