@@ -7,23 +7,18 @@ body {
     line-height: 26px;
 
     background-color: #f2f2f2;
-    background-position: top center;
+    color: #000000;
+
 }
 
 a {
     text-decoration: none;
-
-
+    color: #000000;
 }
 
 .main-cover {
     position: relative;
-    background-image: url("../img/sedona.jpg");
-    background-repeat: no-repeat;
-    background-color: lightblue;
-    background-size: cover;
-    height: 900px;
-
+    background: lightblue url("../img/sedona.jpg") no-repeat center top;
 }
 
 .main-cover::before {
@@ -54,9 +49,7 @@ a {
     list-style: none;
 }
 
-.menu a {
-    color: #000000;
-}
+
 
 .menu a:hover,
 .menu a:focus {
@@ -334,7 +327,7 @@ svg:active {
     fill: #bdbbbc;
 }
 
-/** САТАЛОГ **/
+/** КАТАЛОГ **/
 .catalog-wrapper {
     background-color: #fefefe;
 
@@ -344,24 +337,12 @@ svg:active {
     list-style: none;
 }
 
-.catalog-list-info a {
-    color: #000000;
-}
-
-.catalog-list-info a:hover {
+.sheet-of-hotels:hover {
     color: #a3c7de;
 }
 
-.catalog-list-info a:active {
+.sheet-of-hotels:active {
     color: #c1c1c1;
-}
-
-.catalog-title {
-    font-size: 14px;
-}
-
-.catalog-money {
-    font-size: 14px;
 }
 
 .info-catalog {
@@ -387,10 +368,10 @@ a.info-catalog {
 
 .info-catalog:active {
     background-color: #5496bd;
-    color: #88b6d1;
+
 }
 
-.info-catalog a:active {
+.info-catalog:active {
     color: #88b6d1;
 }
 
@@ -413,12 +394,12 @@ a.catalog-item-button {
 
 .catalog-item-button:hover {
     background-color: #604e43;
-
+    color: #ffffff;
 }
 
 .catalog-item-button:active {
     background-color: #503e33;
-    color: #766860;
+    color: #857871;
 }
 
 .item-ratig-count {
@@ -428,4 +409,11 @@ a.catalog-item-button {
     width: 110px;
     height: 27px;
     text-align: center;
+}
+
+.item-rating-stars {
+    background-image: url(../img/star.svg);
+    background-repeat: repeat;
+    height: 18px;
+    width: 17px;
 }
