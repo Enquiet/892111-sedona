@@ -11,6 +11,11 @@ body {
 
 }
 
+.content-color {
+    background-color: #ffffff;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, .25);
+}
+
 *,
 *::before,
 *::after {
@@ -44,14 +49,11 @@ a {
     font-weight: 700;
     background-color: #ffffff;
     line-height: 22px;
-
 }
 
 .menu {
     list-style: none;
 }
-
-
 
 .menu a:hover,
 .menu a:focus {
@@ -69,8 +71,6 @@ a {
 
 .cause-sedona {
     text-align: center;
-
-    background-color: #ffffff;
 }
 
 .headline h2 {
@@ -78,11 +78,7 @@ a {
     line-height: 26px;
 }
 
-
-
 .main-search-sedona {
-
-
     text-align: center;
     font-size: 21px;
 
@@ -94,11 +90,6 @@ a {
     padding-left: 140px;
     padding-right: 139px;
     border: none;
-
-}
-
-.main-forn {
-    background-color: #ffffff;
 }
 
 button.main-search-sedona:hover {
@@ -113,19 +104,17 @@ button.main-search-sedona:active {
 .arrival-date-calendar {
     margin-top: 55px;
 
-
 }
 
 .date-of-eviction-and-age {
     line-height: 22px;
     font-weight: 700;
 
-    background-color: #ffffff;
     margin-bottom: 25px;
 
 }
 
-.date-arrival {
+.date-of-visit {
     background-color: #f2f2f2;
     border: none;
 
@@ -136,16 +125,15 @@ button.main-search-sedona:active {
     text-align: center;
     font-weight: bold;
 
-
 }
 
-.date-arrival:hover {
+.date-of-visit:hover {
     background-color: #ebebeb;
     border: none;
     color: #000000;
 }
 
-.date-arrival:focus {
+.date-of-visit:focus {
     background-color: #ffffff;
     border: solid 1px #ebebeb;
     color: #000000;
@@ -182,11 +170,7 @@ button.open-calendar-button:active {
     width: 150px;
     margin: 50px auto 0;
 
-
     font-weight: 700;
-
-    background-color: #ffffff;
-    color: #000000;
 
 }
 
@@ -230,12 +214,12 @@ button.open-calendar-button:active {
     top: 105%;
     left: 60%;
     transform: translate(-50%, -50%);
-    background-color: gray;
+    background-color: #f2f2f2;
 }
 
 .number-controll:hover::before,
 .number-controll:hover::after {
-    background-color: black;
+    background-color: #000000;
 }
 
 .min-button {
@@ -275,7 +259,6 @@ input.find-sedona:active {
     color: #7aadcb;
 }
 
-
 .main-social {
     list-style: none;
 }
@@ -304,11 +287,6 @@ input.find-sedona:active {
 
 .social-logo:active {
     fill: #88b6d1;
-
-}
-
-.main-footer {
-    background-color: #f9fbf6;
 }
 
 .footer-logo-img {
@@ -324,9 +302,7 @@ input.find-sedona:active {
 }
 
 /** КАТАЛОГ **/
-.catalog-wrapper {
-    background-color: #fefefe;
-}
+
 
 .catalog-list-info {
     list-style: none;
