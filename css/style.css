@@ -9,14 +9,14 @@ body {
     background-color: #f2f2f2;
     color: #000000;
 
-    min-width: 1280px;
-    min-height: 2765px;
 
 }
 
 .content-color {
     background-color: #ffffff;
-    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, .25);
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, .25);
+    width: 1200px;
+    margin: 0 auto;
 }
 
 *,
@@ -30,61 +30,75 @@ a {
     color: #000000;
 }
 
-.main-menu {
-    margin-bottom: 65px;
+.main-nav {
+    position: relative;
+    width: 1060px;
+    margin: 0 auto;
 
+    font-weight: 700;
+    background-color: #ffffff;
+    line-height: 22px;
+}
+
+.main-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.menu-list {
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px;
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+    color: #81b3d2;
+}
+
+.menu-list a:active {
+    color: #cccccc;
+}
+
+.main-cover {
+    text-align: center;
 }
 
 .main-cover {
     position: relative;
     background: lightblue url("../img/sedona.jpg") no-repeat center top;
     background-size: cover;
+    margin-bottom: 65px;
+
 }
 
 .main-cover::before {
     width: 100%;
-    height: 60px;
+    height: 110px;
     bottom: 0;
     content: '';
     position: absolute;
     display: block;
-    background-image: url("../img/polygon.svg");
-    background-size: 100% 60px;
+    background-image: url(../img/polygon.svg);
+    background-size: 100% auto;
+    background-position: bottom left;
     background-repeat: no-repeat;
-}
-
-.main-nav {
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    background-color: #ffffff;
-    line-height: 22px;
-}
-
-.menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.menu a:hover,
-.menu a:focus {
-    color: #81b3d2;
-}
-
-.menu a:active {
-    color: #cccccc;
-
-}
-
-.main-cover {
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 .cause-sedona {
     text-align: center;
+    margin-bottom: 50px;
+
 }
 
 .headline h2 {
@@ -92,13 +106,18 @@ a {
     line-height: 26px;
 }
 
+.main-search-sedona-container {
+    display: flex;
+    justify-content: center;
+}
+
 .main-search-sedona {
-    text-align: center;
     font-size: 21px;
 
     background-color: #766357;
     color: #ffffff;
-
+    width: 570px;
+    margin: 0 auto;
     padding-top: 35px;
     padding-bottom: 32px;
     padding-left: 140px;
@@ -115,22 +134,40 @@ button.main-search-sedona:active {
     color: #857871;
 }
 
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-centiaer {
+    width: 570px;
+    margin: 0 auto;
+}
+
 .arrival-date-calendar {
     margin-top: 55px;
+    width: 460px;
+}
 
+.timetables {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin: 0 50px;
 }
 
 .date-of-eviction-and-age {
     line-height: 22px;
     font-weight: 700;
 
-    margin-bottom: 25px;
-
 }
 
 .date-of-visit {
+    display: block;
     background-color: #f2f2f2;
     border: none;
+    padding: 0 50px;
 
     width: 350px;
     height: 38px;
@@ -155,43 +192,53 @@ button.main-search-sedona:active {
 }
 
 .departure-date-calendar {
+    width: 460px;
     margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .open-calendar-button {
+    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../img/calendar.svg");
-    background-color: #ffffff;
     fill: #a9a9a9;
-
-    border: none;
-    width: 38px;
+    left: 310px;
+    width: 40px;
     height: 38px;
+    bottom: 0px;
+    border: none;
+    display: block;
+
+    background-color: transparent;
+
 
 }
 
-button.open-calendar-button:hover {
+.open-calendar-button:hover {
     fill: #000000;
 }
 
-button.open-calendar-button:active {
+.open-calendar-button:active {
     fill: #81b3d2;
 }
 
-.how-many-adults-children {
+.person {
+    display: flex;
+    margin-bottom: 25px;
+
+}
+
+.number-input {
     position: relative;
-    width: 150px;
-    margin: 50px auto 0;
-
     font-weight: 700;
-
+    margin-bottom: 30px;
+    margin: 0 50px;
 }
 
 .input {
     display: block;
     padding: 0 50px;
-    width: 150px;
+    width: 115px;
     height: 40px;
     border: none;
     background-color: #f2f2f2;
@@ -225,10 +272,10 @@ button.open-calendar-button:active {
     content: '';
     width: 16px;
     height: 4px;
-    top: 105%;
-    left: 60%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f2f2f2;
+    background-color: #a9a9a9;
 }
 
 .number-controll:hover::before,
@@ -247,6 +294,12 @@ button.open-calendar-button:active {
 .max-button::before {
     width: 4px;
     height: 16px;
+}
+
+
+.sedona-to {
+    width: 460px;
+    margin-bottom: 50px;
 }
 
 .find-sedona {
@@ -273,8 +326,34 @@ input.find-sedona:active {
     color: #7aadcb;
 }
 
+.main-footer {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.main-flex {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.visit-s {
+    width: 240px;
+    text-align: center;
+
+
+}
+
 .main-social {
     list-style: none;
+    width: 150px;
+}
+
+.website {
+    width: 240px;
+
 }
 
 .social-background {
@@ -316,10 +395,29 @@ input.find-sedona:active {
 }
 
 /** КАТАЛОГ **/
+.catalog-list {
+    width: 1060px;
+    margin: 0 auto;
 
+}
+
+.catalog-prise {
+    margin-left: 30px;
+    flex-grow: 1;
+}
 
 .catalog-list-info {
+    display: flex;
+
     list-style: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: aliceblue;
+}
+
+.catalog-prise {
+    height: 100px;
+    background-color: antiquewhite;
 }
 
 .sheet-of-hotels:hover {
@@ -329,6 +427,7 @@ input.find-sedona:active {
 .sheet-of-hotels:active {
     color: #c1c1c1;
 }
+
 
 .info-catalog {
     background-color: #81b3d2;
@@ -387,6 +486,10 @@ a.catalog-item-button {
     color: #857871;
 }
 
+.item-rating {
+    margin-left: auto;
+}
+
 .item-rating-count {
     background-color: #f2f2f2;
     color: #8b8b8b;
@@ -401,4 +504,5 @@ a.catalog-item-button {
     background-repeat: repeat;
     height: 18px;
     width: 17px;
+    margin-bottom: 45px;
 }
