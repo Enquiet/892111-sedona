@@ -15,7 +15,7 @@ body {
 .content-color {
     background-color: #ffffff;
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, .25);
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -30,10 +30,13 @@ a {
     color: #000000;
 }
 
+.center-container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
 .main-nav {
     position: relative;
-    width: 1060px;
-    margin: 0 auto;
 
     font-weight: 700;
     background-color: #ffffff;
@@ -61,12 +64,12 @@ a {
     padding: 15px;
 }
 
-.menu-list a:hover,
-.menu-list a:focus {
+a.menu-link:hover,
+a.menu-link:focus {
     color: #81b3d2;
 }
 
-.menu-list a:active {
+a.menu-link:active {
     color: #cccccc;
 }
 
@@ -76,7 +79,10 @@ a {
 
 .main-cover {
     position: relative;
-    background: lightblue url("../img/sedona.jpg") no-repeat center top;
+    background-color: lightblue;
+    background-image: url("../img/sedona.jpg");
+    background-repeat: no-repeat;
+    text-align: center top;
     background-size: cover;
     margin-bottom: 65px;
 
@@ -107,8 +113,9 @@ a {
 }
 
 .main-search-sedona-container {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
+
 }
 
 .main-search-sedona {
@@ -134,31 +141,28 @@ button.main-search-sedona:active {
     color: #857871;
 }
 
-.main-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.form-centiaer {
+
+.form-container {
     width: 570px;
     margin: 0 auto;
 }
 
 .arrival-date-calendar {
-    margin-top: 55px;
-    width: 460px;
+
+    height: 45px;
+    margin-top: 75px;
 }
 
 .timetables {
     position: relative;
     font-weight: 700;
-    margin-bottom: 30px;
-    margin: 0 50px;
+    left: 170px;
+    bottom: 30px;
 }
 
 .date-of-eviction-and-age {
-    line-height: 22px;
+    margin-left: 50px;
     font-weight: 700;
 
 }
@@ -167,8 +171,7 @@ button.main-search-sedona:active {
     display: block;
     background-color: #f2f2f2;
     border: none;
-    padding: 0 50px;
-
+    padding-right: 50px;
     width: 350px;
     height: 38px;
     border: none;
@@ -222,23 +225,20 @@ button.main-search-sedona:active {
     fill: #81b3d2;
 }
 
-.person {
-    display: flex;
-    margin-bottom: 25px;
 
-}
 
 .number-input {
     position: relative;
     font-weight: 700;
     margin-bottom: 30px;
-    margin: 0 50px;
+
 }
+
 
 .input {
     display: block;
     padding: 0 50px;
-    width: 115px;
+    width: 100%;
     height: 40px;
     border: none;
     background-color: #f2f2f2;
@@ -276,11 +276,13 @@ button.main-search-sedona:active {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #a9a9a9;
+
 }
 
 .number-controll:hover::before,
 .number-controll:hover::after {
     background-color: #000000;
+
 }
 
 .min-button {
@@ -297,17 +299,15 @@ button.main-search-sedona:active {
 }
 
 
-.sedona-to {
-    width: 460px;
-    margin-bottom: 50px;
-}
-
 .find-sedona {
+    width: 460px;
+    margin-left: 60px;
+    margin-bottom: 50px;
     font-size: 21px;
     border: none;
 }
 
-.sedona-to input {
+input.find-sedona {
     background-color: #81b3d2;
     color: #ffffff;
     padding-top: 17px;
@@ -327,9 +327,7 @@ input.find-sedona:active {
 }
 
 .main-footer {
-    width: 1060px;
-    margin: 0 auto;
-    padding: 50px 0;
+    padding-top: 40px;
 }
 
 .main-flex {
@@ -339,21 +337,44 @@ input.find-sedona:active {
 
 }
 
+.child-flex {
+    width: 400px;
+    height: 120px;
+}
+
 .visit-s {
-    width: 240px;
-    text-align: center;
 
-
+    margin-left: 130px;
 }
 
 .main-social {
+    margin-left: 125px;
+}
+
+.main-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
     list-style: none;
     width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 46px;
+
+
 }
 
 .website {
+    margin-left: 100px;
     width: 240px;
-
 }
 
 .social-background {
@@ -395,15 +416,13 @@ input.find-sedona:active {
 }
 
 /** КАТАЛОГ **/
-.catalog-list {
-    width: 1060px;
-    margin: 0 auto;
 
-}
 
-.catalog-prise {
+.catalog-priсe {
     margin-left: 30px;
     flex-grow: 1;
+
+
 }
 
 .catalog-list-info {
@@ -412,13 +431,10 @@ input.find-sedona:active {
     list-style: none;
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: aliceblue;
+
 }
 
-.catalog-prise {
-    height: 100px;
-    background-color: antiquewhite;
-}
+
 
 .sheet-of-hotels:hover {
     color: #a3c7de;
@@ -486,9 +502,7 @@ a.catalog-item-button {
     color: #857871;
 }
 
-.item-rating {
-    margin-left: auto;
-}
+
 
 .item-rating-count {
     background-color: #f2f2f2;
