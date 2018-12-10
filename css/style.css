@@ -142,7 +142,6 @@ button.main-search-sedona:active {
 }
 
 
-
 .form-container {
     width: 570px;
     margin: 0 auto;
@@ -320,12 +319,12 @@ button.main-search-sedona:active {
     padding-right: 198px;
 }
 
-input.find-sedona:hover {
+.find-sedona:hover {
     background-color: #669ec0;
     color: #ffffff;
 }
 
-input.find-sedona:active {
+.find-sedona:active {
     background-color: #5496bd;
     color: #7aadcb;
 }
@@ -343,11 +342,13 @@ input.find-sedona:active {
 
 .child-flex {
     width: 400px;
-    height: 120px;
+    padding-bottom: 35px;
+
 }
 
 .visit-s {
     text-align: center;
+    font-size: 21px;
 }
 
 .main-social {
@@ -438,6 +439,10 @@ input.find-sedona:active {
 }
 
 
+.sheet-of-hotels {
+    font-size: 21px;
+    font-weight: 700;
+}
 
 .sheet-of-hotels:hover {
     color: #a3c7de;
@@ -517,9 +522,15 @@ a.catalog-item-button {
 }
 
 .list-rating-stars {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item-rating-stars {
     background-image: url(../img/star.svg);
     background-repeat: repeat;
     height: 18px;
     width: 17px;
+    margin-right: 5px;
     margin-bottom: 45px;
 }
