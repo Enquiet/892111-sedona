@@ -382,7 +382,7 @@ input.find-sedona:active {
 
 }
 
-..social-background:last-child {
+.social-background:last-child {
     margin: 0;
 }
 
@@ -516,7 +516,7 @@ a.catalog-item-button {
     text-align: center;
 }
 
-.item-rating-stars {
+.list-rating-stars {
     background-image: url(../img/star.svg);
     background-repeat: repeat;
     height: 18px;
