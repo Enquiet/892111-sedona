@@ -161,12 +161,6 @@ button.main-search-sedona:active {
     bottom: 30px;
 }
 
-.date-of-eviction-and-age {
-    margin-left: 50px;
-    font-weight: 700;
-
-}
-
 .date-of-visit {
     display: block;
     background-color: #f2f2f2;
@@ -225,15 +219,29 @@ button.main-search-sedona:active {
     fill: #81b3d2;
 }
 
+.date-of-eviction-and-age {
+    font-weight: 700;
+    margin-left: 50px;
+}
 
+.person-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-input {
+    height: 40px;
+    width: 280px;
+}
 
 .number-input {
     position: relative;
     font-weight: 700;
     margin-bottom: 30px;
-
+    width: 115px;
+    left: 170px;
+    bottom: 35px;
 }
-
 
 .input {
     display: block;
@@ -298,16 +306,12 @@ button.main-search-sedona:active {
     height: 16px;
 }
 
-
 .find-sedona {
     width: 460px;
     margin-left: 60px;
     margin-bottom: 50px;
     font-size: 21px;
     border: none;
-}
-
-input.find-sedona {
     background-color: #81b3d2;
     color: #ffffff;
     padding-top: 17px;
@@ -343,22 +347,16 @@ input.find-sedona:active {
 }
 
 .visit-s {
-
-    margin-left: 130px;
+    text-align: center;
 }
 
 .main-social {
-    margin-left: 125px;
-}
-
-.main-social ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
     list-style: none;
     width: 150px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -368,13 +366,10 @@ input.find-sedona:active {
     align-items: center;
     width: 48px;
     height: 46px;
-
-
 }
 
 .website {
-    margin-left: 100px;
-    width: 240px;
+    text-align: center;
 }
 
 .social-background {
