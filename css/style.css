@@ -352,12 +352,13 @@ input.find-sedona:active {
 
 .main-social {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style: none;
-    width: 150px;
-    margin: 0 auto;
     padding: 0;
+    margin: 0;
+
+
 }
 
 .social-button {
@@ -366,6 +367,7 @@ input.find-sedona:active {
     align-items: center;
     width: 48px;
     height: 46px;
+
 }
 
 .website {
@@ -376,6 +378,12 @@ input.find-sedona:active {
     width: 48px;
     height: 46px;
     background-color: #81b3d2;
+    margin-right: 7px;
+
+}
+
+..social-background:last-child {
+    margin: 0;
 }
 
 .social-background:hover {
