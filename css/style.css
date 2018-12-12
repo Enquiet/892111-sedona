@@ -51,12 +51,25 @@ a {
 }
 
 .menu-list {
-
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.menu-list-item {
+    width: 25%;
+}
+
+.menu-list-item:nth-child(1),
+.menu-list-item:nth-child(2) {
+    text-align: left;
+}
+
+.menu-list-item:nth-child(3),
+.menu-list-item:nth-child(4) {
+    text-align: right;
 }
 
 .menu-link {
@@ -375,6 +388,12 @@ button.main-search-sedona:active {
     text-align: center;
 }
 
+.website span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 0;
+}
+
 .social-background {
     width: 48px;
     height: 46px;
@@ -425,16 +444,24 @@ button.main-search-sedona:active {
 .catalog-priсe {
     margin-left: 30px;
     flex-grow: 1;
+    height: 95px;
+}
 
+.catalog-list {
+    margin: 0;
+    padding: 0;
+}
 
+.list-center {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .catalog-list-info {
-    display: flex;
-
+    border-bottom: solid 2px #e5e5e5;
+    margin: 0;
     list-style: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
 
 }
 
@@ -448,10 +475,23 @@ button.main-search-sedona:active {
     color: #a3c7de;
 }
 
+.catalog-item-detals {
+    margin-top: 10px;
+    width: 180px;
+}
+
+.catalog-title {
+    display: inline-block;
+    min-width: 115px
+}
+
 .sheet-of-hotels:active {
     color: #c1c1c1;
 }
 
+.item-button {
+    margin-top: 5px;
+}
 
 .info-catalog {
     background-color: #81b3d2;
@@ -459,15 +499,7 @@ button.main-search-sedona:active {
 
     text-align: center;
     font-weight: 700;
-
-    padding-bottom: 8px;
-    padding-top: 8px;
-    padding-left: 17px;
-    padding-right: 17px
-}
-
-a.info-catalog {
-    color: #ffffff;
+    padding: 3px 10px;
 }
 
 .info-catalog:hover {
@@ -476,12 +508,12 @@ a.info-catalog {
 
 .info-catalog:active {
     background-color: #5496bd;
-
 }
 
 .info-catalog:active {
     color: #88b6d1;
 }
+
 
 .catalog-item-button {
     background-color: #766357;
@@ -489,28 +521,18 @@ a.info-catalog {
 
     text-align: center;
     font-weight: 700;
-
-    padding-bottom: 8px;
-    padding-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-a.catalog-item-button {
-    color: #ffffff;
+    padding: 3px 10px;
+    margin-left: 10px;
 }
 
 .catalog-item-button:hover {
     background-color: #604e43;
-    color: #ffffff;
 }
 
 .catalog-item-button:active {
     background-color: #503e33;
     color: #857871;
 }
-
-
 
 .item-rating-count {
     background-color: #f2f2f2;
