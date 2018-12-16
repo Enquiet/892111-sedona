@@ -35,7 +35,7 @@ a {
 
 .main-nav {
     position: relative;
-
+    max-width: 1060px;
     font-weight: 700;
     background-color: #ffffff;
     line-height: 22px;
@@ -71,11 +71,6 @@ a {
     text-align: right;
 }
 
-.menu-list-item:nth-child(1),
-.menu-list-item:nth-child(4) {
-    padding-left: 35px;
-    padding-right: 35px;
-}
 
 .menu-link:hover {
     color: #81b3d2;
