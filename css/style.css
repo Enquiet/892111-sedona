@@ -77,13 +77,20 @@ a {
     padding-right: 35px;
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.menu-link:hover {
     color: #81b3d2;
+}
+
+.menu-link::link {
+    color: #766357;
 }
 
 .menu-link:active {
     color: #cccccc;
+}
+
+.menu-active {
+    color: #766357;
 }
 
 .main-cover {
@@ -279,7 +286,6 @@ button.main-search-sedona:active {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    color: #a9a9a9;
 }
 
 .input::-webkit-outer-spin-button,
