@@ -58,6 +58,7 @@ a {
 
 .menu-list-item {
     width: 25%;
+    padding: 15px 0;
 }
 
 .menu-list-item:nth-child(1),
@@ -72,20 +73,16 @@ a {
 
 .menu-list-item:nth-child(1),
 .menu-list-item:nth-child(4) {
-    padding: 0 35px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
-.menu-link {
-    display: block;
-    padding: 15px 0;
-}
-
-a.menu-link:hover,
-a.menu-link:focus {
+.menu-link:hover,
+.menu-link:focus {
     color: #81b3d2;
 }
 
-a.menu-link:active {
+.menu-link:active {
     color: #cccccc;
 }
 
