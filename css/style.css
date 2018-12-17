@@ -124,6 +124,7 @@ a {
     text-align: center;
 }
 
+
 .headline {
     font-size: 21px;
     line-height: 26px;
@@ -133,15 +134,15 @@ a {
 .promo-title {
     font-size: 30px;
     font-weight: 700;
-    padding-top: 85px;
+    padding-top: 50px;
 }
 
 .pointer-sedona {
     padding-bottom: 30px;
 }
 
-.main-search-sedona-container {
-    text-align: center;
+.flex-fixed {
+    height: 256px;
 }
 
 .main-search-sedona {
@@ -155,6 +156,45 @@ a {
     border: none;
 }
 
+.reasons-sedona {
+    height: 1096px;
+}
+
+.background-blue {
+    background-color: #81b3d2;
+    color: #fff;
+
+}
+
+.background-grey {
+    background-color: #eeeeee;
+}
+
+.five-reasons-sedona {
+    text-align: center;
+    padding: 35px 55px 0;
+    min-height: 256px;
+}
+
+.reasons {
+    line-height: 21px;
+}
+
+.home {
+    text-align: center;
+    padding: 60px 71px 74px;
+}
+
+.food {
+    text-align: center;
+    padding: 60px 55px 74px;
+}
+
+.souvenir {
+    text-align: center;
+    padding: 60px 60px 74px;
+}
+
 button.main-search-sedona:hover {
     background-color: #604e43;
 }
@@ -164,10 +204,20 @@ button.main-search-sedona:active {
     color: #857871;
 }
 
+.main-search-sedona-container {
+    position: relative;
+}
+
 .main-form {
+    display: none;
+    position: absolute;
     width: 570px;
     padding: 55px;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    text-align: left;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, .1);
 }
 
 .form-container {
@@ -372,7 +422,10 @@ button.main-search-sedona:active {
 }
 
 .main-footer {
+    position: relative;
+    margin-top: -120px;
     padding: 30px 0 38px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .visit-s {
