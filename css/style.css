@@ -131,10 +131,17 @@ a {
     padding-bottom: 10px;
 }
 
+.cause-sedona p {
+    margin: 0;
+    padding-bottom: 48px;
+}
+
 .promo-title {
+    margin: 0;
     font-size: 30px;
     font-weight: 700;
-    padding-top: 50px;
+    padding-top: 58px;
+    padding-bottom: 26px;
 }
 
 .pointer-sedona {
@@ -157,7 +164,7 @@ a {
 }
 
 .reasons-sedona {
-    height: 1096px;
+    height: 1098px;
 }
 
 .background-blue {
@@ -172,28 +179,50 @@ a {
 
 .five-reasons-sedona {
     text-align: center;
-    padding: 35px 55px 0;
+    padding: 30px 55px 0;
     min-height: 256px;
-}
-
-.reasons {
     line-height: 21px;
 }
 
-.home {
-    text-align: center;
-    padding: 60px 71px 74px;
+.five-reasons-sedona h2 {
+    padding-bottom: 5px;
 }
 
-.food {
+.reasons {
+    padding-top: 8px;
+}
+
+.home {
+    display: inline-block;
     text-align: center;
-    padding: 60px 55px 74px;
+    padding: 60px 71px 65px;
+    line-height: 21px;
+}
+
+
+.food {
+    display: inline-block;
+    text-align: center;
+    padding: 60px 55px 65px;
+    line-height: 21px;
+}
+
+.servich {
+    padding-top: 11px;
+    display: block;
+}
+
+.servich-reasons {
+    padding-top: 5px;
 }
 
 .souvenir {
+    display: inline-block;
     text-align: center;
-    padding: 60px 60px 74px;
+    padding: 60px 60px 65px;
+    line-height: 21px;
 }
+
 
 button.main-search-sedona:hover {
     background-color: #604e43;
@@ -423,8 +452,8 @@ button.main-search-sedona:active {
 
 .main-footer {
     position: relative;
-    margin-top: -120px;
-    padding: 30px 0 38px;
+    margin-top: -131px;
+    padding: 35px 0 42px;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
