@@ -140,7 +140,7 @@ a {
     margin: 0;
     font-size: 30px;
     font-weight: 700;
-    padding-top: 58px;
+    padding-top: 40px;
     padding-bottom: 26px;
 }
 
@@ -163,9 +163,7 @@ a {
     border: none;
 }
 
-.reasons-sedona {
-    height: 1098px;
-}
+
 
 .background-blue {
     background-color: #81b3d2;
