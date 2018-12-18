@@ -140,7 +140,7 @@ a {
     margin: 0;
     font-size: 30px;
     font-weight: 700;
-    padding-top: 40px;
+    padding-top: 55px;
     padding-bottom: 26px;
 }
 
@@ -149,11 +149,12 @@ a {
 }
 
 .flex-fixed {
-    height: 256px;
+    max-height: 256px;
 }
 
 .main-search-sedona {
     font-size: 21px;
+    font-weight: 700;
     text-transform: uppercase;
     background-color: #766357;
     color: #ffffff;
@@ -177,17 +178,17 @@ a {
 
 .five-reasons-sedona {
     text-align: center;
-    padding: 30px 55px 0;
+    padding: 30px 55px 20px;
     min-height: 256px;
     line-height: 21px;
 }
 
 .five-reasons-sedona h2 {
-    padding-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 .reasons {
-    padding-top: 8px;
+    margin-top: 20px;
 }
 
 .home {
@@ -448,11 +449,14 @@ button.main-search-sedona:active {
     width: 400px;
 }
 
-.main-footer {
+.footer-index {
     position: relative;
-    margin-top: -131px;
-    padding: 35px 0 42px;
+    margin-top: -120px;
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer {
+    padding: 30px 0 38px;
 }
 
 .visit-s {
