@@ -153,10 +153,11 @@ a {
 }
 
 .bold-child-flex {
-    height: 256px;
+    min-height: 256px;
     width: 800px;
     background-color: lightblue;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .background-hotel {
@@ -176,7 +177,7 @@ a {
     color: #ffffff;
     width: 570px;
     margin: 0 auto;
-    padding: 33px 0;
+    padding: 32px 0;
     border: none;
 }
 
@@ -207,16 +208,7 @@ a {
     margin-top: 20px;
 }
 
-.home {
-    display: inline-block;
-    text-align: center;
-    padding: 60px 71px 65px;
-    line-height: 21px;
-}
-
-
-.food {
-    display: inline-block;
+.main-servich {
     text-align: center;
     padding: 60px 55px 65px;
     line-height: 21px;
@@ -227,15 +219,12 @@ a {
     display: block;
 }
 
-.servich-reasons {
-    padding-top: 5px;
+.child-flex svg {
+    height: 72px;
 }
 
-.souvenir {
-    display: inline-block;
-    text-align: center;
-    padding: 60px 60px 65px;
-    line-height: 21px;
+.servich-reasons {
+    padding-top: 5px;
 }
 
 
