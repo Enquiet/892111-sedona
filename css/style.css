@@ -223,6 +223,14 @@ a {
     height: 72px;
 }
 
+.map {
+    background-size: cover;
+    background-image: url(../img/map.jpg);
+    background-repeat: no-repeat;
+    height: 593px;
+
+}
+
 .servich-reasons {
     padding-top: 5px;
 }
