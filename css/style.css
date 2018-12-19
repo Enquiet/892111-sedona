@@ -149,7 +149,23 @@ a {
 }
 
 .flex-fixed {
-    max-height: 256px;
+    min-height: 256px;
+}
+
+.bold-child-flex {
+    height: 256px;
+    width: 800px;
+    background-color: lightblue;
+    background-repeat: no-repeat;
+}
+
+.background-hotel {
+    background-image: url(../img/hotel.jpg);
+}
+
+.background-career {
+    background-image: url(../img/career.jpg);
+
 }
 
 .main-search-sedona {
