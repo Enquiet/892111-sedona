@@ -224,6 +224,7 @@ a {
 }
 
 .map {
+    background-color: lightblue;
     background-size: cover;
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
