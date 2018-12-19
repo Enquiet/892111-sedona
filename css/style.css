@@ -219,7 +219,7 @@ a {
     display: block;
 }
 
-.child-flex svg {
+.child-flex > svg {
     height: 72px;
 }
 
