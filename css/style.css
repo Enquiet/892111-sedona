@@ -723,6 +723,7 @@ button.main-search-sedona:active {
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .range-toggle-min {
@@ -838,6 +839,8 @@ button.main-search-sedona:active {
 
 .up-dir,
 .down-dir {
+    background-color: #fff;
+    border: none;
     fill: #cacaca;
 }
 
