@@ -23,6 +23,8 @@ body {
     box-sizing: border-box;
 }
 
+.visually-hidden {}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -574,6 +576,257 @@ button.main-search-sedona:active {
 
 /** КАТАЛОГ **/
 
+.form-catalog {
+    color: #fff;
+}
+
+.info-catalog {
+    margin-top: 20px;
+    display: block;
+}
+
+.label-checkbox {
+    cursor: pointer;
+    line-height: 21px;
+
+}
+
+.main-info-catalog p {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.main-info-catalog:nth-child(2) {
+    margin-left: 15px;
+}
+
+
+.input-catalog {
+    display: none;
+}
+
+.checkbox-indicator {
+    padding-right: 40px;
+}
+
+.input-catalog + .label-checkbox .checkbox-indicator {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+.input-catalog:checked + .label-checkbox .checkbox-indicator {
+    background: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.form-catalog {
+    background-image: url("../img/background-catalog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 218px;
+
+}
+
+.filter-range {
+    width: 318px;
+
+    margin-left: auto;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+}
+
+.price-controls label {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 31px;
+    vertical-align: top;
+
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    padding-left: 72px;
+}
+
+.range-controls {
+    position: relative;
+
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    background-image: url(../img/filter-button.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+
+    background: #ffffff;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+
+    color: inherit;
+    font: inherit;
+
+    background: none;
+    border: none;
+}
+
+.catalog-list-menu {
+    border-bottom: solid 2px #e5e5e5;
+    padding: 0;
+}
+
+
+
+.catalog-nav {
+    display: flex;
+    max-width: 1056px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.main-catalog-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 525px
+}
+
+.catalog-flex {
+    width: 240px;
+}
+
+.catalog-nemu h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.catalog-nemu {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.color-money {
+    color: #81b3d2;
+}
+
+.border-color {
+    border-bottom: 1px dotted #81b3d2;
+    color: #b2b2b2;
+}
+
+.border-color:hover {
+    color: #81b3d2;
+}
+
+.border-color:active {
+    color: #000;
+    border-bottom: none;
+}
+
+.dir {
+    margin-left: auto;
+}
+
 .catalog-priсe {
     flex-grow: 1;
 }
@@ -581,6 +834,21 @@ button.main-search-sedona:active {
 .catalog-list {
     margin: 0;
     padding: 0;
+}
+
+.up-dir,
+.down-dir {
+    fill: #cacaca;
+}
+
+.up-dir:hover,
+.down-dir:hover {
+    fill: #000;
+}
+
+.up-dir:active,
+.down-dir:active {
+    fill: #81b3d2;
 }
 
 .list-center {

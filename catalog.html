@@ -42,6 +42,115 @@
             </nav>
         </header>
         <main class="main-catalog">
+            <form class="form-catalog">
+                <div class="list-center">
+                    <div class="catalog-flex main-info-catalog">
+                        <p>Инфраструктура:</p>
+                        <div class="info-catalog">
+                            <input class="input-catalog " id="pool" type="checkbox" checked>
+                            <label class="label-checkbox" for="pool">
+                                <span class="checkbox-indicator"></span>
+                                Бассеин
+                            </label>
+                        </div>
+                        <div class="info-catalog">
+                            <input class="input-catalog" id="parking" type="checkbox">
+                            <label class="label-checkbox" for="parking">
+                                <span class="checkbox-indicator"></span>
+                                Парковки
+                            </label>
+                        </div>
+                        <div class="info-catalog">
+                            <input class="input-catalog " id="wi-fi" type="checkbox">
+                            <label class="label-checkbox" for="wi-fi">
+                                <span class="checkbox-indicator"></span>
+                                WI-FI
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog-flex main-info-catalog">
+                        <p>Тип жилья:</p>
+                        <div class="info-catalog">
+                            <input class="input-catalog " id="hotel" type="checkbox" checked>
+                            <label class="label-checkbox" for="hotel">
+                                <span class="checkbox-indicator"></span>
+                                гостиница
+                            </label>
+                        </div>
+                        <div class="info-catalog">
+                            <input class="input-catalog" id="motel" type="checkbox" checked>
+                            <label class="label-checkbox" for="motel">
+                                <span class="checkbox-indicator"></span>
+                                мотель
+                            </label>
+                        </div>
+                        <div class="info-catalog">
+                            <input class="input-catalog " id="apartments" type="checkbox" checked>
+                            <label class="label-checkbox" for="apartments">
+                                <span class="checkbox-indicator"></span>
+                                апартаменты
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-range">
+                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                        <div class="price-controls">
+                            <label class="min-price">
+                                от
+                                <input type="text" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">
+                                до
+                                <input type="text" name="max-price" value="3000">
+                            </label>
+                        </div>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
+                    </div>
+                </div>
+            </form>
+            <section class="catalog-list-menu">
+                <nav class="catalog-nav  main-flex-vertical-middle">
+                    <ul class="main-catalog-flex">
+                        <li class="catalog-nemu">
+                            <h3>
+                                Найдено:3
+                            </h3>
+                        </li>
+                        <li class="catalog-nemu">
+                            сортировка:
+                        </li>
+                        <li class="catalog-nemu">
+                            <a class=" color-money" href="#">
+                                по цене
+                            </a>
+                        </li>
+                        <li class="catalog-nemu">
+                            <a class="border-color" href="#">
+                                по типу
+                            </a>
+                        </li>
+                        <li class="catalog-nemu">
+                            <a class="border-color" href="#">
+                                по рейтингу
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dir">
+                        <svg class="up-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                            <path d="M5.5 0L0 10h11z" /></svg>
+                        <svg class="down-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                            <path d="M5.5 10L0 0h11" /></svg>
+                    </div>
+                </nav>
+            </section>
             <section class="catalog-wrapper">
                 <ul class="catalog-list ">
                     <li class="catalog-list-info ">
