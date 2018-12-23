@@ -842,15 +842,16 @@ button.main-search-sedona:active {
     background-color: #fff;
     border: none;
     fill: #cacaca;
+    padding: 3px;
 }
 
-.up-dir:hover,
-.down-dir:hover {
+.up-dir:hover svg,
+.down-dir:hover svg {
     fill: #000;
 }
 
-.up-dir:active,
-.down-dir:active {
+.up-dir:active svg,
+.down-dir:active svg {
     fill: #81b3d2;
 }
 
