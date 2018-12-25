@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
 <body>
@@ -48,22 +48,25 @@
                         <p>Инфраструктура:</p>
                         <div class="info-catalog">
                             <input class="input-catalog " id="pool" type="checkbox" checked>
+                            <span class="checkbox-indicator" tabindex="0">
+                            </span>
                             <label class="label-checkbox" for="pool">
-                                <span class="checkbox-indicator"></span>
                                 Бассеин
                             </label>
                         </div>
                         <div class="info-catalog">
                             <input class="input-catalog" id="parking" type="checkbox">
+                            <span class="checkbox-indicator" tabindex="0">
+                            </span>
                             <label class="label-checkbox" for="parking">
-                                <span class="checkbox-indicator"></span>
                                 Парковки
                             </label>
                         </div>
                         <div class="info-catalog">
                             <input class="input-catalog " id="wi-fi" type="checkbox">
+                            <span class="checkbox-indicator" tabindex="0">
+                            </span>
                             <label class="label-checkbox" for="wi-fi">
-                                <span class="checkbox-indicator"></span>
                                 WI-FI
                             </label>
                         </div>
@@ -72,28 +75,32 @@
                         <p>Тип жилья:</p>
                         <div class="info-catalog">
                             <input class="input-catalog " id="hotel" type="checkbox" checked>
+                            <span class="checkbox-indicator" tabindex="0">
+                            </span>
                             <label class="label-checkbox" for="hotel">
-                                <span class="checkbox-indicator"></span>
                                 гостиница
                             </label>
                         </div>
                         <div class="info-catalog">
                             <input class="input-catalog" id="motel" type="checkbox" checked>
+                            <span class="checkbox-indicator" tabindex="0">
+                            </span>
                             <label class="label-checkbox" for="motel">
-                                <span class="checkbox-indicator"></span>
                                 мотель
                             </label>
                         </div>
                         <div class="info-catalog">
                             <input class="input-catalog " id="apartments" type="checkbox" checked>
+                            <span class="checkbox-indicator" man="apartments" tabindex="0">
+                            </span>
                             <label class="label-checkbox" for="apartments">
-                                <span class="checkbox-indicator"></span>
                                 апартаменты
                             </label>
                         </div>
                     </div>
                     <div class="filter-range">
-                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                        <div class="filter-range-title">Стоимость в сутки (р):
+                        </div>
                         <div class="price-controls">
                             <label class="min-price">
                                 от
@@ -106,13 +113,17 @@
                         </div>
                         <div class="range-controls">
                             <div class="scale">
-                                <div class="bar"></div>
+                                <div class="bar">
+                                </div>
                             </div>
-                            <div class="range-toggle range-toggle-min"></div>
-                            <div class="range-toggle range-toggle-max"></div>
+                            <div class="range-toggle range-toggle-min">
+                            </div>
+                            <div class="range-toggle range-toggle-max">
+                            </div>
 
                         </div>
-                        <button class="btn-transparent" type="submit">Показать</button>
+                        <button class="btn-transparent" type="submit">Показать
+                        </button>
                     </div>
                 </div>
             </form>
@@ -144,11 +155,15 @@
                         </li>
                     </ul>
                     <div class="dir">
-                        <button class="up-dir">
+                        <button class="up-dir"> <span class="visually-hidden">
+                                Сортировка с начала
+                            </span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                                 <path d="M5.5 0L0 10h11z" /></svg>
                         </button>
-                        <button class="down-dir">
+                        <button class="down-dir"> <span class="visually-hidden">
+                                Сортировка с конца
+                            </span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                                 <path d="M5.5 10L0 0h11" /></svg>
                         </button>
@@ -179,7 +194,7 @@
                                         Подробнее
                                     </a>
                                     <a class="item-button item-button-buy" href="#">
-                                        забранировать
+                                        забронировать
                                     </a>
                                 </div>
                             </div>
@@ -221,7 +236,7 @@
                                         Подробнее
                                     </a>
                                     <a class="item-button item-button-buy" href="#">
-                                        забранировать
+                                        забронировать
                                     </a>
                                 </div>
                             </div>
@@ -261,7 +276,7 @@
                                         Подробнее
                                     </a>
                                     <a class="item-button item-button-buy" href="#">
-                                        забранировать
+                                        забронировать
                                     </a>
                                 </div>
                             </div>
