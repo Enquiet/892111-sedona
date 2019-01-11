@@ -43,30 +43,27 @@
         </header>
         <main class="main-catalog">
             <form class="form-catalog">
-                <div class="list-center">
+                <div class="center-form-catalog">
                     <div class="catalog-flex main-info-catalog">
                         <p>Инфраструктура:</p>
                         <div class="info-catalog">
-                            <input class="input-catalog " id="pool" type="checkbox" checked>
-                            <span class="checkbox-indicator" tabindex="0">
-                            </span>
-                            <label class="label-checkbox" for="pool">
+                            <label class="login-checkbox" tabindex="0">
+                                <input type="checkbox" name="remember" class="visually-hidden" checked>
+                                <span class="checkbox-indicator" tabindex="0"></span>
                                 Бассеин
                             </label>
                         </div>
                         <div class="info-catalog">
-                            <input class="input-catalog" id="parking" type="checkbox">
-                            <span class="checkbox-indicator" tabindex="0">
-                            </span>
-                            <label class="label-checkbox" for="parking">
-                                Парковки
+                            <label class="login-checkbox" tabindex="0">
+                                <input type="checkbox" name="remember" class="visually-hidden">
+                                <span class="checkbox-indicator" tabindex="0"></span>
+                                Парковка
                             </label>
                         </div>
                         <div class="info-catalog">
-                            <input class="input-catalog " id="wi-fi" type="checkbox">
-                            <span class="checkbox-indicator" tabindex="0">
-                            </span>
-                            <label class="label-checkbox" for="wi-fi">
+                            <label class="login-checkbox">
+                                <input type="checkbox" name="remember" class="visually-hidden">
+                                <span class="checkbox-indicator" tabindex="0"></span>
                                 WI-FI
                             </label>
                         </div>
@@ -74,26 +71,23 @@
                     <div class="catalog-flex main-info-catalog">
                         <p>Тип жилья:</p>
                         <div class="info-catalog">
-                            <input class="input-catalog " id="hotel" type="checkbox" checked>
-                            <span class="checkbox-indicator" tabindex="0">
-                            </span>
-                            <label class="label-checkbox" for="hotel">
+                            <label class="login-checkbox" tabindex="0">
+                                <input type="checkbox" name="remember" class="visually-hidden" checked>
+                                <span class="checkbox-indicator" tabindex="0"></span>
                                 гостиница
                             </label>
                         </div>
                         <div class="info-catalog">
-                            <input class="input-catalog" id="motel" type="checkbox" checked>
-                            <span class="checkbox-indicator" tabindex="0">
-                            </span>
-                            <label class="label-checkbox" for="motel">
+                            <label class="login-checkbox" tabindex="0">
+                                <input type="checkbox" name="remember" class="visually-hidden" checked>
+                                <span class="checkbox-indicator" tabindex="0"></span>
                                 мотель
                             </label>
                         </div>
                         <div class="info-catalog">
-                            <input class="input-catalog " id="apartments" type="checkbox" checked>
-                            <span class="checkbox-indicator" tabindex="0">
-                            </span>
-                            <label class="label-checkbox" for="apartments">
+                            <label class="login-checkbox" tabindex="0">
+                                <input type="checkbox" name="remember" class="visually-hidden" checked>
+                                <span class="checkbox-indicator" tabindex="0"></span>
                                 апартаменты
                             </label>
                         </div>
@@ -117,8 +111,14 @@
                                 </div>
                             </div>
                             <div class="range-toggle range-toggle-min">
+                                <span class="visually-hidden">
+                                    Минимальная цена
+                                </span>
                             </div>
                             <div class="range-toggle range-toggle-max">
+                                <span class="visually-hidden">
+                                    Максимальная цена
+                                </span>
                             </div>
 
                         </div>
@@ -128,16 +128,16 @@
                 </div>
             </form>
             <section class="catalog-list-menu">
-                <nav class="catalog-nav  main-flex-vertical-middle">
-                    <ul class="main-catalog-flex">
-                        <li class="catalog-nemu">
-                            <h3>
-                                Найдено:3
-                            </h3>
-                        </li>
-                        <li class="catalog-nemu">
+                <div class="catalog-nav  main-flex-vertical-middle">
+                    <div class="search-help">
+                        <h3>
+                            Найдено: 3
+                        </h3>
+                        <p>
                             сортировка:
-                        </li>
+                        </p>
+                    </div>
+                    <ul class="main-catalog-flex">
                         <li class="catalog-nemu">
                             <a class=" color-money" href="#">
                                 по цене
@@ -155,141 +155,133 @@
                         </li>
                     </ul>
                     <div class="dir">
-                        <button class="up-dir"> <span class="visually-hidden">
+                        <a class="up-dir" href="#"> <span class="visually-hidden">
                                 Сортировка с начала
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                                <path d="M5.5 0L0 10h11z" /></svg>
-                        </button>
-                        <button class="down-dir"> <span class="visually-hidden">
+                                <path d="M5.5 0L0 10h11z" />
+                            </svg>
+                        </a>
+                        <a class="down-dir" href="#"> <span class="visually-hidden">
                                 Сортировка с конца
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                                <path d="M5.5 10L0 0h11" /></svg>
-                        </button>
+                                <path d="M5.5 10L0 0h11" />
+                            </svg>
+                        </a>
                     </div>
-                </nav>
+                </div>
             </section>
             <section class="catalog-wrapper">
                 <ul class="catalog-list ">
-                    <li class="catalog-list-info ">
-                        <div class="list-center">
-                            <a class="catalog-photo" href="#">
-                                <img src="img/arma.jpg" height="90" width="135" alt="Amara Resort & Spa" />
+                    <li class="catalog-list-info list-center">
+                        <a class="catalog-photo" href="#">
+                            <img src="img/arma.jpg" height="90" width="135" alt="Amara Resort & Spa" />
+                        </a>
+                        <div class="catalog-priсe ">
+                            <a class="sheet-of-hotels" href="#">
+                                Amara Resort & Spa
                             </a>
-                            <div class="catalog-priсe ">
-                                <a class="sheet-of-hotels" href="#">
-                                    Amara Resort & Spa
-                                </a>
-                                <div class="catalog-item-detals">
-                                    <span class="catalog-title">
-                                        Гостиница
-                                    </span>
-                                    <span class="catalog-money">
-                                        от 4000Р
-                                    </span>
-                                </div>
-                                <div class="item-button-wrapper">
-                                    <a class="item-button item-button-more" href="#">
-                                        Подробнее
-                                    </a>
-                                    <a class="item-button item-button-buy" href="#">
-                                        забронировать
-                                    </a>
-                                </div>
+                            <div class="catalog-item-detals">
+                                <span class="catalog-title">
+                                    Гостиница
+                                </span>
+                                <span class="catalog-money">
+                                    от 4000 Р.
+                                </span>
                             </div>
-                            <div class="main-rating">
-                                <div class="list-rating-stars">
-                                    <span class="item-rating-stars"></span>
-                                    <span class="item-rating-stars"></span>
-                                    <span class="item-rating-stars"></span>
-                                    <span class="item-rating-stars"></span>
-                                </div>
-                                <div class="item-rating-count">
-                                    Рейтинг: 8,5
-                                </div>
+                            <div class="item-button-wrapper">
+                                <a class="item-button item-button-more" href="#">
+                                    Подробнее
+                                </a>
+                                <a class="item-button item-button-buy" href="#">
+                                    забронировать
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-rating">
+                            <div class="list-rating-stars">
+                                <span class="item-rating-stars"></span>
+                                <span class="item-rating-stars"></span>
+                                <span class="item-rating-stars"></span>
+                                <span class="item-rating-stars"></span>
+                            </div>
+                            <div class="item-rating-count">
+                                Рейтинг: 8,5
                             </div>
                         </div>
                     </li>
 
-                    <li class="catalog-list-info ">
-                        <div class="list-center ">
-                            <div class="photo-link ">
-                                <a class="catalog-photo">
-                                    <img src="img/desert.jpg" height="90" width="135" alt="Desert Quail Inn" />
+                    <li class="catalog-list-info list-center ">
+                        <a class="catalog-photo" href="#">
+                            <img src="img/desert.jpg" height="90" width="135" alt="Desert Quail Inn" />
+                        </a>
+                        <div class="catalog-priсe ">
+                            <a class="sheet-of-hotels" href="#">
+                                Desert Quail Inn
+                            </a>
+                            <div class="catalog-item-detals">
+                                <span class="catalog-title">
+                                    Мотель
+                                </span>
+                                <span class="catalog-money">
+                                    от 3000 Р.
+                                </span>
+                            </div>
+                            <div class="item-button-wrapper">
+                                <a class="item-button item-button-more" href="#">
+                                    Подробнее
+                                </a>
+                                <a class="item-button item-button-buy" href="#">
+                                    забронировать
                                 </a>
                             </div>
-                            <div class="catalog-priсe ">
-                                <a class="sheet-of-hotels" href="#">
-                                    Desert Quail Inn
-                                </a>
-                                <div class="catalog-item-detals">
-                                    <span class="catalog-title">
-                                        Мотель
-                                    </span>
-                                    <span class="catalog-money">
-                                        от 3000Р
-                                    </span>
-                                </div>
-                                <div class="item-button-wrapper">
-                                    <a class="item-button item-button-more" href="#">
-                                        Подробнее
-                                    </a>
-                                    <a class="item-button item-button-buy" href="#">
-                                        забронировать
-                                    </a>
-                                </div>
+                        </div>
+                        <div class="main-rating">
+                            <div class="list-rating-stars">
+                                <span class="item-rating-stars"></span>
+                                <span class="item-rating-stars"></span>
+                                <span class="item-rating-stars"></span>
                             </div>
-                            <div class="main-rating">
-                                <div class="list-rating-stars">
-                                    <span class="item-rating-stars"></span>
-                                    <span class="item-rating-stars"></span>
-                                    <span class="item-rating-stars"></span>
-                                </div>
-                                <div class="item-rating-count">
-                                    Рейтинг: 8,9
-                                </div>
+                            <div class="item-rating-count">
+                                Рейтинг: 8,9
                             </div>
                         </div>
                     </li>
-                    <li class="catalog-list-info ">
-                        <div class="list-center">
-                            <div class="photo-link ">
-                                <a class="catalog-photo">
-                                    <img src="img/villas.jpg" height="90" width="135" alt="Villas At Poco Diablo" />
+                    <li class="catalog-list-info list-center">
+                        <a class="catalog-photo" href="#">
+                            <img src="img/villas.jpg" height="90" width="135" alt="Villas At Poco Diablo" />
+                        </a>
+                        <div class="catalog-priсe ">
+                            <a class="sheet-of-hotels" href="#">
+                                Villas At Poco Diablo
+                            </a>
+                            <div class="catalog-item-detals">
+                                <span class="catalog-title">
+                                    Апартаменты
+                                </span>
+                                <span class="catalog-money">
+                                    от 2000 р.
+                                </span>
+                            </div>
+                            <div class="item-button-wrapper">
+                                <a class="item-button item-button-more" href="#">
+                                    Подробнее
+                                </a>
+                                <a class="item-button item-button-buy" href="#">
+                                    забронировать
                                 </a>
                             </div>
-                            <div class="catalog-priсe ">
-                                <a class="sheet-of-hotels" href="#">
-                                    Villas At Poco Diablo
-                                </a>
-                                <div class="catalog-item-detals">
-                                    <span class="catalog-title">
-                                        Апартаменты
-                                    </span>
-                                    <span class="catalog-money">
-                                        от 2000
-                                    </span>
-                                </div>
-                                <div class="item-button-wrapper">
-                                    <a class="item-button item-button-more" href="#">
-                                        Подробнее
-                                    </a>
-                                    <a class="item-button item-button-buy" href="#">
-                                        забронировать
-                                    </a>
-                                </div>
+                        </div>
+                        <div class="main-rating">
+                            <div class="list-rating-stars">
+                                <span class="item-rating-stars">
+                                </span>
+                                <span class="item-rating-stars">
+                                </span>
                             </div>
-                            <div class="main-rating">
-                                <div class="list-rating-stars">
-                                    <span class="item-rating-stars">
-                                    </span>
-                                    <span class="item-rating-stars">
-                                    </span>
-                                </div>
-                                <div class="item-rating-count">
-                                    Рейтинг: 9,2
-                                </div>
+                            <div class="item-rating-count">
+                                Рейтинг: 9,2
                             </div>
                         </div>
                     </li>
