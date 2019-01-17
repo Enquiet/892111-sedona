@@ -1,7 +1,7 @@
 body {
     margin: 0;
 
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     line-height: 26px;
@@ -118,21 +118,22 @@ a {
 .main-cover {
     position: relative;
     background-color: lightblue;
-    background-image: url(../img/sedona.jpg);
+    background-image: url("../img/sedona.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 60px;
     height: 510px;
+    background-position: 0 -55px;
 }
 
 .main-cover::after {
     width: 100%;
     height: 57px;
     bottom: 0;
-    content: '';
+    content: "";
     position: absolute;
     display: block;
-    background-image: url(../img/polygon.svg);
+    background-image: url("../img/polygon.svg");
     background-size: 100% auto;
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -161,28 +162,28 @@ a {
 .cause-sedona p {
     margin: 0;
     padding-bottom: 48px;
-    color: #4e4e4e;
+    color: #333333;
 }
 
 .got-interested {
     width: 570px;
     margin: 0 auto;
     text-align: center;
-    line-height: 21px;
 }
 
 .promo-title {
     margin: 0;
     font-size: 30px;
     font-weight: 700;
-    padding-top: 57px;
-    margin-bottom: 35px;
+    padding-top: 48px;
+    margin-bottom: 25px;
+    line-height: 36px;
 }
 
 .pointer-sedona {
-    padding-left: 8px;
-    padding-bottom: 35px;
-    color: #414141;
+    padding-bottom: 34px;
+    color: #333333;
+    line-height: 24px;
 }
 
 .flex-fixed {
@@ -197,11 +198,11 @@ a {
 }
 
 .background-hotel {
-    background-image: url(../img/hotel.jpg);
+    background-image: url("../img/hotel.jpg");
 }
 
 .background-career {
-    background-image: url(../img/career.jpg);
+    background-image: url("../img/career.jpg");
 
 }
 
@@ -219,10 +220,7 @@ a {
     line-height: 21px;
 }
 
-/*.background-grey:last-child {
-    padding: 30px 71px 20px;
-}
-*/
+
 .background-grey h2 {
     margin: 16px 55px 22px;
     width: 160px;
@@ -237,7 +235,7 @@ a {
 }
 
 .span-color {
-    color: #4c4c4c;
+    color: #333333;
 }
 
 .five-reasons-sedona h2 {
@@ -250,7 +248,7 @@ a {
 }
 
 .reasons-color {
-    color: #4c4c4c;
+    color: #333333;
 }
 
 .reasons-fix {
@@ -272,7 +270,7 @@ a {
 .map {
     background-color: lightblue;
     background-size: cover;
-    background-image: url(../img/map.jpg);
+    background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     height: 593px;
 
@@ -280,7 +278,7 @@ a {
 
 .servich-reasons {
     padding-top: 8px;
-    color: #4e4e4e;
+    color: #333333;
 }
 
 .servich-reasons-fix {
@@ -547,7 +545,7 @@ input::placeholder {
 .number-controll::after {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     width: 11px;
     height: 3px;
     top: 50%;
@@ -652,10 +650,6 @@ input::placeholder {
     list-style: none;
     padding-left: 0;
     margin: 0;
-}
-
-.social-padding {
-    padding-top: 2px;
 }
 
 .social-button {
@@ -794,27 +788,7 @@ input::placeholder {
     overflow: hidden;
 }
 
-/**.checkbox-indicator {
-    width: 25px;
-    height: 25px
-}
 
-.label-checkbox input[type="checkbox"] + .checkbox-indicator {
-    height: 25px;
-    background-image: url(../img/checkbox-off.svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-
-}
-
-.label-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
-    background: url(../img/checkbox-on.svg);
-    background-repeat: no-repeat;
-    left: 0;
-    top: 0;
-}
-
-*/
 .login-checkbox {
     position: relative;
 
@@ -822,7 +796,7 @@ input::placeholder {
 
     cursor: pointer;
     height: 25px;
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -836,7 +810,7 @@ input::placeholder {
 
     width: 30px;
     height: 25px;
-    background: url(../img/checkbox-on.svg);
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
 }
 
@@ -849,7 +823,7 @@ input::placeholder {
 }
 
 .form-catalog {
-    background-image: url(../img/background-catalog.jpg);
+    background-image: url("../img/background-catalog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 218px;
@@ -939,7 +913,7 @@ input::placeholder {
 .range-toggle {
     position: absolute;
     top: -9px;
-    background-image: url(../img/filter-button.svg);
+    background-image: url("../img/filter-button.svg");
     background-repeat: no-repeat;
     width: 20px;
     height: 23px;
@@ -1173,13 +1147,18 @@ input::placeholder {
     color: #81b3d2;
 }
 
+.catalog-item-detals {
+    margin-top: 2px;
+}
+
 .catalog-money {
     display: inline-block;
-    padding-top: 3px;
+    line-height: 21px;
+    vertical-align: middle;
 }
 
 .item-button-wrapper {
-    margin-top: 12px;
+    margin-top: 13px;
 }
 
 .catalog-title {
@@ -1236,7 +1215,7 @@ input::placeholder {
 
 .item-rating-count {
     background-color: #f2f2f2;
-    color: #8b8b8b;
+    color: #666666;
     min-width: 110px;
     line-height: 21px;
     padding: 3px 0;
@@ -1253,7 +1232,7 @@ input::placeholder {
     margin-right: 3px;
     display: inline-block;
     vertical-align: top;
-    background-image: url(../img/star.svg);
+    background-image: url("../img/star.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
